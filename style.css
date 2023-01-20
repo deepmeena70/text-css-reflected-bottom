@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #141422;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-container {
+  color: white;
+  position: relative;
+  margin-top: 10%;
+}
+.text-container div {
+  position: absolute;
+  font-size: 12rem;
+  transition: all 0.6s ease;
+  text-shadow: 0 0 14px skyblue;
+}
+.text-container div:hover {
+  color: rgb(112, 241, 255);
+  transform: scale(1.35) rotate(20deg);
+}
+.text-container div:nth-child(1) {
+  left: 10rem;
+}
+.text-container div:nth-child(1)::after {
+  content: "t";
+}
+.text-container div:nth-child(2) {
+  left: 14rem;
+}
+.text-container div:nth-child(2)::after {
+  content: "h";
+}
+.text-container div:nth-child(3) {
+  left: 20rem;
+}
+.text-container div:nth-child(3)::after {
+  content: "e";
+}
+.text-container div:nth-child(4) {
+  left: 25rem;
+}
+.text-container div:nth-child(4)::after {
+  content: "l";
+}
+.text-container div:nth-child(5) {
+  left: 28rem;
+}
+.text-container div:nth-child(5)::after {
+  content: "e";
+}
+.text-container div:nth-child(6) {
+  left: 33.5rem;
+}
+.text-container div:nth-child(6)::after {
+  content: "a";
+}
+.text-container div:nth-child(7) {
+  left: 39rem;
+}
+.text-container div:nth-child(7)::after {
+  content: "r";
+}
+.text-container div:nth-child(8) {
+  left: 43.5rem;
+}
+.text-container div:nth-child(8)::after {
+  content: "n";
+}
+.text-container div:nth-child(9) {
+  left: 50rem;
+}
+.text-container div:nth-child(9)::after {
+  content: "i";
+}
+.text-container div:nth-child(10) {
+  left: 54rem;
+}
+.text-container div:nth-child(10)::after {
+  content: "n";
+}
+.text-container div:nth-child(11) {
+  left: 59.5rem;
+}
+.text-container div:nth-child(11)::after {
+  content: "g";
+}
+.text-container div:nth-child(12) {
+  left: 66rem;
+}
+.text-container div:nth-child(12)::after {
+  content: "h";
+}
+.text-container div:nth-child(13) {
+  left: 72rem;
+}
+.text-container div:nth-child(13)::after {
+  content: "a";
+}
+.text-container div:nth-child(14) {
+  left: 77rem;
+}
+.text-container div:nth-child(14)::after {
+  content: "b";
+}
+.text-container div:nth-child(n)::after {
+  position: absolute;
+  top: 14rem;
+  left: 0rem;
+  filter: blur(5px);
+  text-shadow: 0 0 30px rgb(135, 225, 235);
+  transform: scale(1, -1);
+}/*# sourceMappingURL=style.css.map */

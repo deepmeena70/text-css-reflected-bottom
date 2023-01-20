@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #141422;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin child-styles() {
+  &:nth-child(n)::after {
+    position: absolute;
+    top: 14rem;
+    left: 0rem;
+    filter: blur(5px);
+    text-shadow: 0 0 30px rgb(135, 225, 235);
+    transform: scale(1,-1);
+  }
+}
+
+.text-container {
+  color: white;
+  position: relative;
+  margin-top: 10%;
+  div {
+    position: absolute;
+    font-size: 12rem;
+    transition: all .6s ease;
+    text-shadow: 0 0 14px skyblue;
+    &:hover {
+      color: rgb(112, 241, 255);
+      transform:  scale(1.35) rotate(20deg);
+    //   perspective: 1000px;
+    }
+    &:nth-child(1) {
+      left: 10rem;
+      &::after {
+        content: 't';
+      }
+    }
+    &:nth-child(2) {
+      left: 14rem;
+      &::after {
+        content: 'h';
+      }
+    }
+    &:nth-child(3) {
+      left: 20rem;
+      &::after {
+        content: 'e';
+      }
+    }
+    &:nth-child(4) {
+      left: 25rem;
+      &::after {
+        content: 'l';
+      }
+    }
+    &:nth-child(5) {
+      left: 28rem;
+      &::after {
+        content: 'e';
+      }
+    }
+    &:nth-child(6) {
+      left: 33.5rem;
+      &::after {
+        content: 'a';
+      }
+    }
+    &:nth-child(7) {
+      left: 39rem;
+      &::after {
+        content: 'r';
+      }
+    }
+    &:nth-child(8) {
+      left: 43.5rem;
+      &::after {
+        content: 'n';
+      }
+    }
+    &:nth-child(9) {
+      left: 50rem;
+      &::after {
+        content: 'i';
+      }
+    }
+    &:nth-child(10) {
+      left: 54rem;
+      &::after {
+        content: 'n';
+      }
+    }
+    &:nth-child(11) {
+      left: 59.5rem;
+      &::after {
+        content: 'g';
+      }
+    }
+    &:nth-child(12) {
+      left: 66rem;
+      &::after {
+        content: 'h';
+      }
+    }
+    &:nth-child(13) {
+      left: 72rem;
+      &::after {
+        content: 'a';
+      }
+    }
+    &:nth-child(14) {
+      left: 77rem;
+      &::after {
+        content: 'b';
+      }
+    }
+    @include child-styles;
+  }
+}
