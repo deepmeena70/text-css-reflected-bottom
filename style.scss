@@ -39,8 +39,7 @@ body {
     text-shadow: 0 0 14px skyblue;
     &:hover {
       color: rgb(112, 241, 255);
-      transform:  scale(1.35) rotate(20deg);
-    //   perspective: 1000px;
+      transform:  scale(1.25);
     }
     &:nth-child(1) {
       left: 10rem;

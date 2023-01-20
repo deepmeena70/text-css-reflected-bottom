@@ -30,7 +30,7 @@ body {
 }
 .text-container div:hover {
   color: rgb(112, 241, 255);
-  transform: scale(1.35) rotate(20deg);
+  transform: scale(1.25);
 }
 .text-container div:nth-child(1) {
   left: 10rem;
